@@ -18,7 +18,7 @@ struct CodeDesign: View {
             Text("Switching app".uppercased())
                 .font(.largeTitle.width(.condensed))
                 .fontWeight(.bold)
-            Text("Yes, we accept PayPal for the one-year plan only. Purchasing through PayPal will not renew your subscription at the end of your one-year period.")
+            Text("Yes, we accept PayPal for the one-year plan only. Purchasing through PayPal will not renew your subscription at the end of your one-year period")
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
                 .fontWeight(.medium)
