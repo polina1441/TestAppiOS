@@ -25,7 +25,7 @@ struct CodeDesign: View {
             Button{
                 
             } label: {
-                Text("Got it!")
+                Text("Got it")
                     .padding(.all)
                     .frame(maxWidth: .infinity)
                     .background(.clear.gradient)
