@@ -9,12 +9,13 @@ import SwiftUI
 struct MyNavigationView : View{
     var body: some View{
         NavigationView {
-            List {
-                NavigationLink {
+            List{
+                NavigationLink() {
                     CodeDesign()
                 } label: {
-                    Text("Open DesignCode")
-                } .padding(.vertical, 9)
+                    Label("DesignCode Lesson 1", systemImage: "book")
+                }
+            .padding(.vertical, 9)
                 .navigationTitle("Learn Swift UI")}
             .toolbar {
                 ToolbarItem {
@@ -22,7 +23,7 @@ struct MyNavigationView : View{
                         Image(systemName: "timelapse")
                             .imageScale(.large)
                             .font(.title2)
-                        }
+                    }
                 }
             }
         }
