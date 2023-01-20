@@ -6,9 +6,9 @@
 //
 import SwiftUI
 
-struct MyNavigationView : View{
+struct MainRootNavigationView : View{
     var body: some View{
-        NavigationView {
+        NavigationStack {
             List{
                 NavigationLink() {
                     CodeDesign()
@@ -33,7 +33,7 @@ struct MyNavigationView : View{
 
 struct NavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        MyNavigationView()
+        MainRootNavigationView()
     }
 }
 

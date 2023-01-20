@@ -11,7 +11,7 @@ import SwiftUI
 struct TestAppiOSApp: App {
     var body: some Scene {
         WindowGroup {
-            MyNavigationView()
+            MainRootNavigationView()
         }
     }
 }

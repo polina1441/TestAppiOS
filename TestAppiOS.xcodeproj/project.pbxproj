@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		800986E929782FFA00C82062 /* MyNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800986E829782FFA00C82062 /* MyNavigationView.swift */; };
+		800986E929782FFA00C82062 /* MainRootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800986E829782FFA00C82062 /* MainRootNavigationView.swift */; };
 		800986EB2978608600C82062 /* CodeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800986EA2978608600C82062 /* CodeDesign.swift */; };
 		800A73BB284D5153000F55AA /* TestAppiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A73BA284D5153000F55AA /* TestAppiOSApp.swift */; };
 		800A73BD284D5153000F55AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A73BC284D5153000F55AA /* ContentView.swift */; };
@@ -17,7 +17,10 @@
 		800A73D6284D5155000F55AA /* TestAppiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A73D5284D5155000F55AA /* TestAppiOSUITests.swift */; };
 		800A73D8284D5155000F55AA /* TestAppiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A73D7284D5155000F55AA /* TestAppiOSUITestsLaunchTests.swift */; };
 		801416CC295F814A001D1906 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 801416CB295F814A001D1906 /* Storyboard.storyboard */; };
-		801416E92960B2B1001D1906 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801416E82960B2B1001D1906 /* Artwork.swift */; };
+		801416E92960B2B1001D1906 /* NavigationItemForDynamicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801416E82960B2B1001D1906 /* NavigationItemForDynamicList.swift */; };
+		80F1B092297AA3A600E19297 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B091297AA3A600E19297 /* NavigationStackView.swift */; };
+		80F1B094297AD8B300E19297 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B093297AD8B300E19297 /* MessageView.swift */; };
+		80F1B096297ADBEC00E19297 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B095297ADBEC00E19297 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		800986E829782FFA00C82062 /* MyNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationView.swift; sourceTree = "<group>"; };
+		800986E829782FFA00C82062 /* MainRootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootNavigationView.swift; sourceTree = "<group>"; };
 		800986EA2978608600C82062 /* CodeDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDesign.swift; sourceTree = "<group>"; };
 		800A73B7284D5153000F55AA /* TestAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		800A73BA284D5153000F55AA /* TestAppiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppiOSApp.swift; sourceTree = "<group>"; };
@@ -51,7 +54,10 @@
 		800A73D5284D5155000F55AA /* TestAppiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppiOSUITests.swift; sourceTree = "<group>"; };
 		800A73D7284D5155000F55AA /* TestAppiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		801416CB295F814A001D1906 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		801416E82960B2B1001D1906 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		801416E82960B2B1001D1906 /* NavigationItemForDynamicList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemForDynamicList.swift; sourceTree = "<group>"; };
+		80F1B091297AA3A600E19297 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
+		80F1B093297AD8B300E19297 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		80F1B095297ADBEC00E19297 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,14 +108,17 @@
 		800A73B9284D5153000F55AA /* TestAppiOS */ = {
 			isa = PBXGroup;
 			children = (
-				801416E72960B293001D1906 /* data */,
+				801416E82960B2B1001D1906 /* NavigationItemForDynamicList.swift */,
 				800A73BA284D5153000F55AA /* TestAppiOSApp.swift */,
 				800A73BC284D5153000F55AA /* ContentView.swift */,
 				800A73BE284D5155000F55AA /* Assets.xcassets */,
 				800A73C0284D5155000F55AA /* Preview Content */,
 				801416CB295F814A001D1906 /* Storyboard.storyboard */,
-				800986E829782FFA00C82062 /* MyNavigationView.swift */,
+				800986E829782FFA00C82062 /* MainRootNavigationView.swift */,
 				800986EA2978608600C82062 /* CodeDesign.swift */,
+				80F1B091297AA3A600E19297 /* NavigationStackView.swift */,
+				80F1B093297AD8B300E19297 /* MessageView.swift */,
+				80F1B095297ADBEC00E19297 /* MenuView.swift */,
 			);
 			path = TestAppiOS;
 			sourceTree = "<group>";
@@ -137,14 +146,6 @@
 				800A73D7284D5155000F55AA /* TestAppiOSUITestsLaunchTests.swift */,
 			);
 			path = TestAppiOSUITests;
-			sourceTree = "<group>";
-		};
-		801416E72960B293001D1906 /* data */ = {
-			isa = PBXGroup;
-			children = (
-				801416E82960B2B1001D1906 /* Artwork.swift */,
-			);
-			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				800986EB2978608600C82062 /* CodeDesign.swift in Sources */,
+				80F1B096297ADBEC00E19297 /* MenuView.swift in Sources */,
+				80F1B092297AA3A600E19297 /* NavigationStackView.swift in Sources */,
 				800A73BD284D5153000F55AA /* ContentView.swift in Sources */,
-				801416E92960B2B1001D1906 /* Artwork.swift in Sources */,
-				800986E929782FFA00C82062 /* MyNavigationView.swift in Sources */,
+				801416E92960B2B1001D1906 /* NavigationItemForDynamicList.swift in Sources */,
+				800986E929782FFA00C82062 /* MainRootNavigationView.swift in Sources */,
+				80F1B094297AD8B300E19297 /* MessageView.swift in Sources */,
 				800A73BB284D5153000F55AA /* TestAppiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
