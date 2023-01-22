@@ -11,9 +11,20 @@ struct MainRootNavigationView : View{
         NavigationStack {
             List{
                 NavigationLink() {
+                    ContentView()
+                } label: {
+                    Label("Ian Solomein Lesson", systemImage: "arrowtriangle.right.circle")
+                }
+            .padding(.vertical, 9)
+                NavigationLink() {
                     CodeDesign()
                 } label: {
                     Label("DesignCode Lesson 1", systemImage: "book")
+                }.padding(.vertical, 9)
+                NavigationLink() {
+                    onBoarding()
+                } label: {
+                    Label("Rive Animation", systemImage: "bolt.heart")
                 }
             .padding(.vertical, 9)
                 .navigationTitle("Learn Swift UI")}
@@ -33,7 +44,7 @@ struct MainRootNavigationView : View{
 
 struct NavigationView_Previews: PreviewProvider {
     static var previews: some View {
-        MainRootNavigationView()
+        MainRootNavigationView().dynamicTypeSize(.xSmall ... .xxxLarge)
     }
 }
 

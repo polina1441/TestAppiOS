@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		800130AB297DAC5B00428B45 /* house.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130A4297DAC5B00428B45 /* house.riv */; };
+		800130AC297DAC5B00428B45 /* confetti.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130A5297DAC5B00428B45 /* confetti.riv */; };
+		800130AD297DAC5B00428B45 /* check.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130A6297DAC5B00428B45 /* check.riv */; };
+		800130AE297DAC5B00428B45 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130A7297DAC5B00428B45 /* menu_button.riv */; };
+		800130AF297DAC5B00428B45 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130A8297DAC5B00428B45 /* shapes.riv */; };
+		800130B0297DAC5B00428B45 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130A9297DAC5B00428B45 /* button.riv */; };
+		800130B1297DAC5B00428B45 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = 800130AA297DAC5B00428B45 /* icons.riv */; };
+		800130B3297DAD8100428B45 /* onBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800130B2297DAD8100428B45 /* onBoarding.swift */; };
+		800130B6297DAFF500428B45 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 800130B5297DAFF500428B45 /* RiveRuntime */; };
 		800986E929782FFA00C82062 /* MainRootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800986E829782FFA00C82062 /* MainRootNavigationView.swift */; };
 		800986EB2978608600C82062 /* CodeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800986EA2978608600C82062 /* CodeDesign.swift */; };
 		800A73BB284D5153000F55AA /* TestAppiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800A73BA284D5153000F55AA /* TestAppiOSApp.swift */; };
@@ -41,6 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		800130A4297DAC5B00428B45 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = house.riv; sourceTree = "<group>"; };
+		800130A5297DAC5B00428B45 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = confetti.riv; sourceTree = "<group>"; };
+		800130A6297DAC5B00428B45 /* check.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.riv; sourceTree = "<group>"; };
+		800130A7297DAC5B00428B45 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
+		800130A8297DAC5B00428B45 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		800130A9297DAC5B00428B45 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
+		800130AA297DAC5B00428B45 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		800130B2297DAD8100428B45 /* onBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoarding.swift; sourceTree = "<group>"; };
 		800986E829782FFA00C82062 /* MainRootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootNavigationView.swift; sourceTree = "<group>"; };
 		800986EA2978608600C82062 /* CodeDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDesign.swift; sourceTree = "<group>"; };
 		800A73B7284D5153000F55AA /* TestAppiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800130B6297DAFF500428B45 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		800130A3297DAC5B00428B45 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				800130A4297DAC5B00428B45 /* house.riv */,
+				800130A5297DAC5B00428B45 /* confetti.riv */,
+				800130A6297DAC5B00428B45 /* check.riv */,
+				800130A7297DAC5B00428B45 /* menu_button.riv */,
+				800130A8297DAC5B00428B45 /* shapes.riv */,
+				800130A9297DAC5B00428B45 /* button.riv */,
+				800130AA297DAC5B00428B45 /* icons.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
 		800A73AE284D5153000F55AA = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +140,7 @@
 		800A73B9284D5153000F55AA /* TestAppiOS */ = {
 			isa = PBXGroup;
 			children = (
+				800130A3297DAC5B00428B45 /* RiveAssets */,
 				801416E82960B2B1001D1906 /* NavigationItemForDynamicList.swift */,
 				800A73BA284D5153000F55AA /* TestAppiOSApp.swift */,
 				800A73BC284D5153000F55AA /* ContentView.swift */,
@@ -119,6 +152,7 @@
 				80F1B091297AA3A600E19297 /* NavigationStackView.swift */,
 				80F1B093297AD8B300E19297 /* MessageView.swift */,
 				80F1B095297ADBEC00E19297 /* MenuView.swift */,
+				800130B2297DAD8100428B45 /* onBoarding.swift */,
 			);
 			path = TestAppiOS;
 			sourceTree = "<group>";
@@ -164,6 +198,9 @@
 			dependencies = (
 			);
 			name = TestAppiOS;
+			packageProductDependencies = (
+				800130B5297DAFF500428B45 /* RiveRuntime */,
+			);
 			productName = TestAppiOS;
 			productReference = 800A73B7284D5153000F55AA /* TestAppiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -236,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 800A73AE284D5153000F55AA;
+			packageReferences = (
+				800130B4297DAFF500428B45 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = 800A73B8284D5153000F55AA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,9 +292,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				800130B1297DAC5B00428B45 /* icons.riv in Resources */,
+				800130AD297DAC5B00428B45 /* check.riv in Resources */,
+				800130AB297DAC5B00428B45 /* house.riv in Resources */,
 				800A73C2284D5155000F55AA /* Preview Assets.xcassets in Resources */,
+				800130B0297DAC5B00428B45 /* button.riv in Resources */,
 				800A73BF284D5155000F55AA /* Assets.xcassets in Resources */,
 				801416CC295F814A001D1906 /* Storyboard.storyboard in Resources */,
+				800130AF297DAC5B00428B45 /* shapes.riv in Resources */,
+				800130AE297DAC5B00428B45 /* menu_button.riv in Resources */,
+				800130AC297DAC5B00428B45 /* confetti.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +334,7 @@
 				800986E929782FFA00C82062 /* MainRootNavigationView.swift in Sources */,
 				80F1B094297AD8B300E19297 /* MessageView.swift in Sources */,
 				800A73BB284D5153000F55AA /* TestAppiOSApp.swift in Sources */,
+				800130B3297DAD8100428B45 /* onBoarding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +661,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		800130B4297DAFF500428B45 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		800130B5297DAFF500428B45 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 800130B4297DAFF500428B45 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 800A73AF284D5153000F55AA /* Project object */;
 }
