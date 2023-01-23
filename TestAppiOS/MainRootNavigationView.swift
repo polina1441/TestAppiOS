@@ -25,9 +25,8 @@ struct MainRootNavigationView : View{
                     onBoarding()
                 } label: {
                     Label("Rive Animation", systemImage: "bolt.heart")
-                }
-            .padding(.vertical, 9)
-                .navigationTitle("Learn Swift UI")}
+                }.padding(.vertical, 9)
+                 .navigationTitle("Learn Swift UI")}
             .toolbar {
                 ToolbarItem {
                     Button(action: {}) {
