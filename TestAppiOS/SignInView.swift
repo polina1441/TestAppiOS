@@ -13,8 +13,9 @@ struct SignInView: View {
     var body: some View {
         VStack(spacing: 24) {
             Text("Sign in").customFont(.largeTitle).bold()
-            Text("Access to 240+ hours of content.Learn design and code, by building real apps with React and Swift.").customFont(.headline)
+            Text("Access to 240+ hours of content. Learn design and code, by building real apps with React and Swift.").customFont(.headline)
                 .foregroundColor(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
             VStack(alignment: .leading) {
                 Text("Email").customFont(.subheadline)
                     .foregroundColor(.secondary)
@@ -34,6 +35,14 @@ struct SignInView: View {
                 SecureField("", text: $password)
                     .customTextFields(img: Image("Icon Lock"))
             }
+            Label("Sign in", systemImage: "arrow.right")
+                .padding(20)
+                .frame(maxWidth: .infinity)
+                .background(Color(hex: "F77D8E"))
+                .foregroundColor(.white)
+                .cornerRadius(20, corners: [.topRight, .bottomLeft, .bottomRight])
+                .cornerRadius(8, corners: [.topLeft ])
+                .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
             HStack {
                 Rectangle().frame(height: 1).opacity(0.1)
                 Text("OR").customFont(.subheadline2)
@@ -51,6 +60,7 @@ struct SignInView: View {
             }
         }
         .padding(30)
+//        .padding(.top, -30)
         .background(.regularMaterial)
         .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
