@@ -6,10 +6,41 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct SignInView: View {
     @State var email : String = ""
     @State var password : String = ""
+    @State var loading = false
+    @Binding var showSignInModal : Bool
+    let check = RiveViewModel(fileName: "check", stateMachineName: "State Machine 1")
+    let confetti = RiveViewModel(fileName: "confetti", stateMachineName: "State Machine 1")
+    
+    func logIn() {
+        loading = true
+        
+        if email != "" {
+            DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                try? check.triggerInput("Check")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now()+2.5) {
+                loading = false
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+                withAnimation(.spring()){
+                    showSignInModal = false
+                }
+            }
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now()+1) {
+                try? check.triggerInput("Error")
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+                loading = false
+            }
+        }
+        
+    }
     var body: some View {
         VStack(spacing: 24) {
             Text("Sign in").customFont(.largeTitle).bold()
@@ -24,7 +55,7 @@ struct SignInView: View {
             }
             VStack {
                 HStack {
-                    Text("Email").customFont(.subheadline)
+                    Text("Password").customFont(.subheadline)
                         .foregroundColor(.secondary)
                     Spacer()
                     Button{} label: {
@@ -35,14 +66,18 @@ struct SignInView: View {
                 SecureField("", text: $password)
                     .customTextFields(img: Image("Icon Lock"))
             }
-            Label("Sign in", systemImage: "arrow.right")
-                .padding(20)
-                .frame(maxWidth: .infinity)
-                .background(Color(hex: "F77D8E"))
-                .foregroundColor(.white)
-                .cornerRadius(20, corners: [.topRight, .bottomLeft, .bottomRight])
-                .cornerRadius(8, corners: [.topLeft ])
+            Button{
+                logIn()
+            } label: {
+                Label("Sign in", systemImage: "arrow.right")
+                    .padding(20)
+                    .frame(maxWidth: .infinity)
+                    .background(Color(hex: "F77D8E"))
+                    .foregroundColor(.white)
+                    .cornerRadius(20, corners: [.topRight, .bottomLeft, .bottomRight])
+                    .cornerRadius(8, corners: [.topLeft ])
                 .shadow(color: Color(hex: "F77D8E").opacity(0.5), radius: 20, x: 0, y: 10)
+            }
             HStack {
                 Rectangle().frame(height: 1).opacity(0.1)
                 Text("OR").customFont(.subheadline2)
@@ -60,13 +95,25 @@ struct SignInView: View {
             }
         }
         .padding(30)
-//        .padding(.top, -30)
         .background(.regularMaterial)
         .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 5, x: 0, y: 3)
         .shadow(color: Color("Shadow").opacity(0.3), radius: 30, x: 0, y: 30)
         .overlay(stroke_card)
-        .padding()
+        .padding(.horizontal)
+        .padding(.bottom, 50)
+        .overlay(
+            ZStack{
+                if loading {
+                    check.view()
+                        .frame(width: 100, height: 100)
+                        .allowsTightening(false)
+                    
+                }
+//                confetti.view()
+//                    .allowsTightening(false)
+            }
+         )
     }
     var stroke_card: some View {
         RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -77,6 +124,6 @@ struct SignInView: View {
 
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView()
+        SignInView(showSignInModal: .constant(true))
     }
 }

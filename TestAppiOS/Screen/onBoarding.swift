@@ -19,13 +19,13 @@ struct onBoarding: View {
             content
                 .padding(40)
                 .padding(.top, 40)
-                .offset(y: showSignInModal ? 6 : 0)
+                .offset(y: showSignInModal ? -28 : 0)
             Color("Shadow")
                 .ignoresSafeArea()
                 .opacity(showSignInModal ? 0.3 : 0.0)
             
             if (showSignInModal){
-                SignInView()
+                SignInView(showSignInModal: .constant(showSignInModal))
                     .padding(0)
                     .opacity(showSignInModal ? 1 : 0)
                     .offset(y: showSignInModal ? 0 : 1000)
@@ -38,12 +38,13 @@ struct onBoarding: View {
                             }
                         } label: {
                             Image(systemName: "xmark")
-                                .frame(width: 36,height: 36)
+                                .frame(width: 40,height: 40)
                                 .foregroundColor(.black)
                                 .background(.white)
                                 .cornerRadius(30, corners: .allCorners)
                                 .shadow(color: Color("Shadow").opacity(0.5), radius: 5, x: 0, y: 3)
-                        }.frame(maxHeight: .infinity, alignment: .bottom)
+                        }.frame(maxHeight: .infinity, alignment: .bottomLeading)
+                            .padding(.bottom, 30)
                     }.zIndex(1)
             }
         }
