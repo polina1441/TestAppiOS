@@ -34,6 +34,7 @@
 		80A14E06297F0DC800FBCD31 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E05297F0DC800FBCD31 /* SignInView.swift */; };
 		80A14E08297F13FA00FBCD31 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E07297F13FA00FBCD31 /* CustomTextField.swift */; };
 		80A14E0C29802CCC00FBCD31 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E0B29802CCC00FBCD31 /* Extension.swift */; };
+		80A14E112982A2A000FBCD31 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E102982A2A000FBCD31 /* TabBar.swift */; };
 		80F1B092297AA3A600E19297 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B091297AA3A600E19297 /* NavigationStackView.swift */; };
 		80F1B094297AD8B300E19297 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B093297AD8B300E19297 /* MessageView.swift */; };
 		80F1B096297ADBEC00E19297 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B095297ADBEC00E19297 /* MenuView.swift */; };
@@ -87,6 +88,7 @@
 		80A14E05297F0DC800FBCD31 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		80A14E07297F13FA00FBCD31 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		80A14E0B29802CCC00FBCD31 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		80A14E102982A2A000FBCD31 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		80F1B091297AA3A600E19297 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		80F1B093297AD8B300E19297 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		80F1B095297ADBEC00E19297 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				80A14E07297F13FA00FBCD31 /* CustomTextField.swift */,
 				80A14E03297F078A00FBCD31 /* CustomFont.swift */,
 				80A14E0B29802CCC00FBCD31 /* Extension.swift */,
+				80A14E102982A2A000FBCD31 /* TabBar.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				800A73BB284D5153000F55AA /* TestAppiOSApp.swift in Sources */,
 				80A14E06297F0DC800FBCD31 /* SignInView.swift in Sources */,
 				800130B3297DAD8100428B45 /* onBoarding.swift in Sources */,
+				80A14E112982A2A000FBCD31 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
