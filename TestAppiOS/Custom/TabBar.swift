@@ -9,7 +9,7 @@ import SwiftUI
 import RiveRuntime
 
 struct TabBar: View {
-    @State var selectedTab : Tab = .chat
+    @AppStorage("selectedTab") var selectedTab : Tab = .chat
     var body: some View {
         VStack {
             Spacer()

@@ -35,6 +35,7 @@
 		80A14E08297F13FA00FBCD31 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E07297F13FA00FBCD31 /* CustomTextField.swift */; };
 		80A14E0C29802CCC00FBCD31 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E0B29802CCC00FBCD31 /* Extension.swift */; };
 		80A14E112982A2A000FBCD31 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E102982A2A000FBCD31 /* TabBar.swift */; };
+		80A14E1329850A4C00FBCD31 /* MainStorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A14E1229850A4C00FBCD31 /* MainStorageView.swift */; };
 		80F1B092297AA3A600E19297 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B091297AA3A600E19297 /* NavigationStackView.swift */; };
 		80F1B094297AD8B300E19297 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B093297AD8B300E19297 /* MessageView.swift */; };
 		80F1B096297ADBEC00E19297 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B095297ADBEC00E19297 /* MenuView.swift */; };
@@ -89,6 +90,7 @@
 		80A14E07297F13FA00FBCD31 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		80A14E0B29802CCC00FBCD31 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		80A14E102982A2A000FBCD31 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		80A14E1229850A4C00FBCD31 /* MainStorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorageView.swift; sourceTree = "<group>"; };
 		80F1B091297AA3A600E19297 /* NavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		80F1B093297AD8B300E19297 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		80F1B095297ADBEC00E19297 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				80A14E0F2982A0C200FBCD31 /* Navigation */,
 				80A14E0D2982A05400FBCD31 /* Screen */,
 				800A73BA284D5153000F55AA /* TestAppiOSApp.swift */,
+				80A14E1229850A4C00FBCD31 /* MainStorageView.swift */,
 			);
 			path = TestAppiOS;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				801416E92960B2B1001D1906 /* NavigationItemForDynamicList.swift in Sources */,
 				80A14E04297F078A00FBCD31 /* CustomFont.swift in Sources */,
 				800986E929782FFA00C82062 /* MainRootNavigationView.swift in Sources */,
+				80A14E1329850A4C00FBCD31 /* MainStorageView.swift in Sources */,
 				80F1B094297AD8B300E19297 /* MessageView.swift in Sources */,
 				80A14E0C29802CCC00FBCD31 /* Extension.swift in Sources */,
 				80A14E08297F13FA00FBCD31 /* CustomTextField.swift in Sources */,
